@@ -207,7 +207,7 @@ You MUST complete each phase before proceeding to the next.
    - Are we "sticking with it through sheer inertia"?
    - Should we refactor architecture vs. continue fixing symptoms?
 
-   **Discuss with your human partner before attempting more fixes**
+   **Send the root-cause evidence and proposed further fix to `superpowers:t3-model-gates` for a new GPT-6.1 Sol / High technical verdict before further changes.**
 
    This is NOT a failed hypothesis - this is a wrong architecture.
 

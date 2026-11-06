@@ -21,7 +21,7 @@ Write the test first. Watch it fail. Write minimal code to pass.
 - Refactoring
 - Behavior changes
 
-**Exceptions (ask your human partner):**
+**Exceptions (obtain a GPT-6.1 Sol / High verdict through `superpowers:t3-model-gates`):**
 - Throwaway prototypes
 - Generated code
 - Configuration files
@@ -309,7 +309,7 @@ Can't check all boxes? You skipped TDD. Start over.
 
 | Problem | Solution |
 |---------|----------|
-| Don't know how to test | Write wished-for API. Write assertion first. Ask your human partner. |
+| Don't know how to test | Write wished-for API. Write assertion first. Have the T3 gate reviewer adjudicate an unavoidable exception. |
 | Test too complicated | Design too complicated. Simplify interface. |
 | Must mock everything | Code too coupled. Use dependency injection. |
 | Test setup huge | Extract helpers. Still complex? Simplify design. |
@@ -327,4 +327,4 @@ Production code → test exists and failed first
 Otherwise → not TDD
 ```
 
-No exceptions without your human partner's permission.
+No process exception without an explicit `APPROVE` from the configured T3 model reviewer. An exception never bypasses real tool permissions or explicit user constraints.
