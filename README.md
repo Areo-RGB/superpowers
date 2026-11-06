@@ -53,11 +53,13 @@ If you're using Superpowers in enterprise and could benefit from commercial supp
 
 Installation differs by harness. If you use more than one, install Superpowers separately for each one.
 
+**This is the Areo-RGB fork.** Use the repository-based install commands below to get this fork's native-execution workflow and T3 Code approval skills. Built-in/official third-party marketplace listings may still distribute the original upstream plugin; installing those listings does not install this fork.
+
 ### Claude Code
 
-Superpowers is available via the [official Claude plugin marketplace](https://claude.com/plugins/superpowers)
+The [official Claude plugin marketplace](https://claude.com/plugins/superpowers) lists the upstream package; use the fork marketplace instructions below for this variant.
 
-#### Official Marketplace
+#### Official Marketplace (upstream package)
 
 - Install the plugin from Anthropic's official marketplace:
 
@@ -65,20 +67,20 @@ Superpowers is available via the [official Claude plugin marketplace](https://cl
   /plugin install superpowers@claude-plugins-official
   ```
 
-#### Superpowers Marketplace
+#### This fork's Claude marketplace
 
-The Superpowers marketplace provides Superpowers and some other related plugins for Claude Code.
+This repository includes a Claude marketplace manifest named `superpowers-dev`. Register this repository to install this fork.
 
 - Register the marketplace:
 
   ```bash
-  /plugin marketplace add obra/superpowers-marketplace
+  /plugin marketplace add Areo-RGB/superpowers
   ```
 
 - Install the plugin from this marketplace:
 
   ```bash
-  /plugin install superpowers@superpowers-marketplace
+  /plugin install superpowers@superpowers-dev
   ```
 
 ### Antigravity
@@ -86,7 +88,7 @@ The Superpowers marketplace provides Superpowers and some other related plugins 
 Install Superpowers as a plugin from this repository:
 
 ```bash
-agy plugin install https://github.com/obra/superpowers
+agy plugin install https://github.com/Areo-RGB/superpowers
 ```
 
 Antigravity lists each installed skill's description, and the description of
@@ -95,7 +97,7 @@ of a conversation. Reinstall with the same command to update.
 
 ### Codex App
 
-Superpowers is available via the [official Codex plugin marketplace](https://github.com/openai/plugins).
+The [official Codex plugin marketplace](https://github.com/openai/plugins) provides the upstream package; it does not automatically provide the Areo-RGB fork.
 
 - In the Codex app, click on Plugins in the sidebar.
 - You should see `Superpowers` in the Coding section.
@@ -134,7 +136,7 @@ Superpowers is available via the [official Codex plugin marketplace](https://git
 - Install the plugin from this repository:
 
   ```bash
-  devin plugins install obra/superpowers
+  devin plugins install Areo-RGB/superpowers
   ```
 
 - Update to the latest version with:
@@ -148,13 +150,13 @@ Superpowers is available via the [official Codex plugin marketplace](https://git
 - Register the marketplace:
 
   ```bash
-  droid plugin marketplace add https://github.com/obra/superpowers
+  droid plugin marketplace add https://github.com/Areo-RGB/superpowers
   ```
 
 - Install the plugin:
 
   ```bash
-  droid plugin install superpowers@superpowers
+  droid plugin install superpowers@superpowers-dev
   ```
 
 ### Gemini CLI
@@ -162,7 +164,7 @@ Superpowers is available via the [official Codex plugin marketplace](https://git
 - Install the extension:
 
   ```bash
-  gemini extensions install https://github.com/obra/superpowers
+  gemini extensions install https://github.com/Areo-RGB/superpowers
   ```
 
 - Update later:
@@ -176,13 +178,13 @@ Superpowers is available via the [official Codex plugin marketplace](https://git
 - Register the marketplace:
 
   ```bash
-  copilot plugin marketplace add obra/superpowers-marketplace
+  copilot plugin marketplace add Areo-RGB/superpowers
   ```
 
 - Install the plugin:
 
   ```bash
-  copilot plugin install superpowers@superpowers-marketplace
+  copilot plugin install superpowers@superpowers-dev
   ```
 
 ### Grok Build CLI
@@ -203,7 +205,7 @@ Superpowers is available via the [official Grok plugin marketplace](https://gith
 
 ### Kimi Code
 
-Superpowers is available in Kimi Code's plugin marketplace.
+Kimi Code's built-in marketplace may provide the upstream package; use the direct repository URL below for this fork.
 
 - Open Kimi Code's plugin manager:
 
@@ -216,7 +218,7 @@ Superpowers is available in Kimi Code's plugin marketplace.
 - Or install directly from this repository:
 
   ```text
-  /plugins install https://github.com/obra/superpowers
+  /plugins install https://github.com/Areo-RGB/superpowers
   ```
 
 - Detailed docs: [docs/README.kimi.md](docs/README.kimi.md)
@@ -229,7 +231,7 @@ already use it in another harness.
 - Tell OpenCode:
 
   ```
-  Fetch and follow instructions from https://raw.githubusercontent.com/obra/superpowers/refs/heads/main/.opencode/INSTALL.md
+  Fetch and follow instructions from https://raw.githubusercontent.com/Areo-RGB/superpowers/refs/heads/main/.opencode/INSTALL.md
   ```
 
 - Detailed docs: [docs/README.opencode.md](docs/README.opencode.md)
@@ -239,7 +241,7 @@ already use it in another harness.
 Install Superpowers as a Pi package from this repository:
 
 ```bash
-pi install git:github.com/obra/superpowers
+pi install git:github.com/Areo-RGB/superpowers
 ```
 
 For local development, run Pi with this checkout loaded as a temporary package:
@@ -248,7 +250,7 @@ For local development, run Pi with this checkout loaded as a temporary package:
 pi -e /path/to/superpowers
 ```
 
-The Pi package loads the Superpowers skills and a small extension that injects the `using-superpowers` bootstrap at session startup and again after compaction. Pi has native skills, so no compatibility `Skill` tool is required. Subagent and task-list tools remain optional Pi companion packages.
+The Pi package loads the Superpowers skills and a small extension that injects the `using-superpowers` bootstrap at session startup and again after compaction. Pi has native skills, so no compatibility `Skill` tool is required. The independent T3 Code review process uses its MCP connection, not an alternate implementation workflow.
 
 ### Qwen Code
 
@@ -257,7 +259,7 @@ Qwen Code installs plugins from Claude Code marketplaces directly.
 - Install the plugin from this repository, and pick `superpowers` when prompted:
 
   ```bash
-  qwen extensions install obra/superpowers
+  qwen extensions install Areo-RGB/superpowers
   ```
 
 - Update later:
@@ -271,7 +273,7 @@ Qwen Code installs plugins from Claude Code marketplaces directly.
 Install Superpowers as a Hermes plugin from this repository:
 
 ```bash
-hermes plugins install obra/superpowers --enable
+hermes plugins install Areo-RGB/superpowers --enable
 ```
 
 Restart any active Hermes sessions after installing. Note: Hermes has no
@@ -292,7 +294,7 @@ Superpowers is available as a native Muse plugin — same repo, same skills, all
   Or clone and install:
 
   ```bash
-  git clone https://github.com/obra/superpowers.git
+  git clone https://github.com/Areo-RGB/superpowers.git
   muse plugins install ./superpowers
   muse plugins approve superpowers
   ```
@@ -307,21 +309,13 @@ Restart any active Muse sessions after installing so the `SessionStart` hook tak
 
 ## The Basic Workflow
 
-1. **brainstorming** - Activates before building anything. Draws out what you actually want, and why, through questions that get you describing it, then plays its understanding back for correction. Small changes get agreed in chat; projects get a written design document a builder could plan from.
+1. **brainstorming** — Defines the goal and design, then uses an independent GPT-6.1 Sol / High reviewer in T3 Code for the design gate.
+2. **writing-plans** — Produces a testable implementation plan and routes the plan gate to that independent reviewer.
+3. **executing-plans** — The current agent implements all tasks natively in the existing checkout, using test-driven development.
+4. **requesting-code-review** — A separate read-only T3 Code reviewer checks the actual diff and test evidence. Each approval request carries the complete `t3-approver/SKILL.md` instructions.
+5. **finishing-a-development-branch** — Verifies completion and preserves the existing branch unless a separate, authorized integration action was requested.
 
-2. **using-git-worktrees** - Activates after design approval. Creates isolated workspace on new branch, runs project setup, verifies clean test baseline.
-
-3. **writing-plans** - Activates with approved design. Breaks work into bite-sized tasks (2-5 minutes each). Every task has exact file paths, complete code, verification steps.
-
-4. **subagent-driven-development** or **executing-plans** - Activates with plan. Either dispatches a fresh subagent per task with a review after each (most thorough), or implements every task inline in the current session with one fresh review of the whole branch at the end (cheapest).
-
-5. **test-driven-development** - Activates during implementation. Enforces RED-GREEN-REFACTOR: write failing test, watch it fail, write minimal code, watch it pass, commit. Deletes code written before tests.
-
-6. **requesting-code-review** - Activates between tasks. Reviews against plan, reports issues by severity. Critical issues block progress.
-
-7. **finishing-a-development-branch** - Activates when tasks complete. Verifies tests, presents options (merge/PR/keep/discard), cleans up worktree.
-
-**The agent checks for relevant skills before any task.** Mandatory workflows, not suggestions.
+**Routine engineering approvals are model-driven, not user sign-off steps.** Actual platform permission and user authorization requirements remain in effect. The agent checks for relevant skills before any task.
 
 ## When Something Goes Wrong
 
@@ -334,7 +328,7 @@ The skill reads the session transcript, reports what happened with line-level ev
 Superpowers is built by [Jesse Vincent](https://blog.fsck.com) and the rest of the folks at [Prime Radiant](https://primeradiant.com).
 
 - **Discord**: [Join us](https://discord.gg/35wsABTejz) for community support, questions, and sharing what you're building with Superpowers
-- **Issues**: https://github.com/obra/superpowers/issues
+- **Issues**: https://github.com/Areo-RGB/superpowers/issues
 - **Release announcements**: [Sign up](https://primeradiant.com/superpowers/) to get notified about new versions
 
 ## What's Inside
@@ -352,16 +346,16 @@ Superpowers is built by [Jesse Vincent](https://blog.fsck.com) and the rest of t
 **Collaboration** 
 - **brainstorming** - Drawing out intent before building
 - **writing-plans** - Detailed implementation plans
-- **executing-plans** - Inline plan execution: one context, one final review
-- **dispatching-parallel-agents** - Concurrent subagent workflows
+- **executing-plans** - Native task-by-task implementation with final independent model review
+- **dispatching-parallel-agents** - Independent read-only research and evaluation through T3 Code
 - **requesting-code-review** - Pre-review checklist
 - **receiving-code-review** - Responding to feedback
-- **using-git-worktrees** - Parallel development branches
-- **finishing-a-development-branch** - Merge/PR decision workflow
-- **subagent-driven-development** - Fast iteration with two-stage review (spec compliance, then code quality)
+- **finishing-a-development-branch** - Safe completion on the existing branch
 
 **Meta**
-- **writing-skills** - Create new skills following best practices (includes testing methodology)
+- **writing-skills** - Create and test new skills
+- **t3-model-gates** - Route engineering gates to GPT-6.1 Sol / High in T3 Code
+- **t3-approver** - Read-only approver instructions embedded in every review request
 - **using-superpowers** - Introduction to the skills system
 
 ## Philosophy
@@ -378,8 +372,8 @@ Read [the original release announcement](https://blog.fsck.com/2025/10/09/superp
 The general contribution process for Superpowers is below. Keep in mind that we don't generally accept contributions of new skills and that any updates to skills must work across all of the coding agents we support. We also don't accept agent-written PRs that fix issues filed by someone else unless a maintainer asked for one, even when you hit the same problem; add your report to the existing issue instead.
 
 1. Fork the repository
-2. Switch to the 'dev' branch
-3. Create a branch for your work
+2. Start from the current `main` branch
+3. Create a feature branch for your changes
 4. Follow the `writing-skills` skill for creating and testing new and modified skills
 5. Submit a PR, filling in every section of the pull request template, including the summary a human writes in their own words.
 

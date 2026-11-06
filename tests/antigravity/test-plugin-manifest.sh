@@ -80,7 +80,7 @@ if not any(entry.get("path") == ".antigravity-plugin/plugin.json"
 skill_md = (root / "skills" / "using-superpowers" / "SKILL.md").read_text(encoding="utf-8")
 frontmatter = re.match(r"---\n(.*?)\n---\n", skill_md, re.DOTALL)
 description = frontmatter and re.search(r"^description:(.*)$", frontmatter.group(1), re.MULTILINE)
-if not description or "Use when starting any conversation" not in description.group(1):
+if not description or "Use at the start of a task" not in description.group(1):
     fail("using-superpowers description no longer says 'Use when starting any "
          "conversation'; Antigravity relies on it to bootstrap")
 

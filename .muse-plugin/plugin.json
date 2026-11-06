@@ -3,7 +3,7 @@
   "name": "superpowers",
   "displayName": "Superpowers",
   "version": "7.0.2",
-  "description": "Core skills library for Muse: TDD, debugging, collaboration patterns, and proven techniques",
+  "description": "Native implementation, TDD, debugging and independent T3 Code model review gates",
   "compat": {
     "source": "native",
     "manifestDir": ".muse-plugin"
@@ -39,20 +39,20 @@
         "path": "skills/requesting-code-review/SKILL.md"
       },
       {
-        "id": "subagent-driven-development",
-        "path": "skills/subagent-driven-development/SKILL.md"
-      },
-      {
         "id": "systematic-debugging",
         "path": "skills/systematic-debugging/SKILL.md"
       },
       {
-        "id": "test-driven-development",
-        "path": "skills/test-driven-development/SKILL.md"
+        "id": "t3-approver",
+        "path": "skills/t3-approver/SKILL.md"
       },
       {
-        "id": "using-git-worktrees",
-        "path": "skills/using-git-worktrees/SKILL.md"
+        "id": "t3-model-gates",
+        "path": "skills/t3-model-gates/SKILL.md"
+      },
+      {
+        "id": "test-driven-development",
+        "path": "skills/test-driven-development/SKILL.md"
       },
       {
         "id": "using-superpowers",

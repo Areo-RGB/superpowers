@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "superpowers",
-      "description": "Core skills library for Claude Code: TDD, debugging, collaboration patterns, and proven techniques",
+      "description": "Core skills: native implementation, TDD, debugging and independent T3 Code model approval gates",
       "version": "7.0.2",
       "source": "./",
       "author": {

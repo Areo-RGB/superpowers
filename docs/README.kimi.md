@@ -17,13 +17,13 @@ Go to `Marketplace` > `Superpowers` and install it.
 You can also install from this repository:
 
 ```text
-/plugins install https://github.com/obra/superpowers
+/plugins install https://github.com/Areo-RGB/superpowers
 ```
 
-For unreleased validation against `dev`, pin the branch explicitly:
+For reviewing the latest fork changes on `main`, pin the branch explicitly:
 
 ```text
-/plugins install https://github.com/obra/superpowers/tree/dev
+/plugins install https://github.com/Areo-RGB/superpowers/tree/main
 ```
 
 Kimi Code applies plugin changes to new sessions. After installing, updating, enabling, disabling, or reloading a plugin, start a fresh session with `/new`.
@@ -46,7 +46,6 @@ Skills describe actions instead of hard-coding one runtime's tool names. On Kimi
 
 - "Ask the user" / "ask clarifying questions" -> `AskUserQuestion`
 - "Create a todo" / "mark complete in todo list" -> `TodoList`
-- "Dispatch a subagent" -> `Agent`
 - "Invoke a skill" -> Kimi Code's native `Skill` tool
 - "Read a file" / "write a file" / "edit a file" -> `Read`, `Write`, `Edit`
 - "Run a shell command" -> `Bash`
@@ -75,10 +74,10 @@ Select Superpowers and update it from there. Start a fresh session with `/new` a
 
 ### Direct GitHub install used an old release
 
-Kimi Code installs the latest GitHub release for a bare repository URL when one exists. To test unreleased changes before the next Superpowers release, install the branch explicitly:
+Kimi Code installs the latest GitHub release for a bare repository URL when one exists. To test the fork's current branch instead of the latest tagged release, install the branch explicitly:
 
 ```text
-/plugins install https://github.com/obra/superpowers/tree/dev
+/plugins install https://github.com/Areo-RGB/superpowers/tree/main
 ```
 
 ### Skills not triggering

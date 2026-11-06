@@ -14,7 +14,7 @@ Use the existing V1 plugin configuration:
 
 ```json
 {
-  "plugin": ["superpowers@git+https://github.com/obra/superpowers.git"]
+  "plugin": ["superpowers@git+https://github.com/Areo-RGB/superpowers.git"]
 }
 ```
 
@@ -24,7 +24,7 @@ Use the V2 plugin configuration:
 
 ```json
 {
-  "plugins": ["superpowers@git+https://github.com/obra/superpowers.git"]
+  "plugins": ["superpowers@git+https://github.com/Areo-RGB/superpowers.git"]
 }
 ```
 
@@ -74,16 +74,16 @@ and Bun versions pin that resolved git dependency in a lockfile or cache, so a
 restart may not pick up the newest Superpowers commit. If updates do not appear,
 clear OpenCode's package cache or reinstall the plugin.
 
-To pin a specific version, add a tag or commit to the spec (same form for the
+To pin a specific revision of this fork, add its existing commit SHA to the spec (same form for the
 V1 `plugin` key and the V2 `plugins` key):
 
 ```json
 {
-  "plugin": ["superpowers@git+https://github.com/obra/superpowers.git#v7.0.2"]
+  "plugin": ["superpowers@git+https://github.com/Areo-RGB/superpowers.git#6c149cc68b1a77dc314ce25d2734d43333af5422"]
 }
 ```
 
-On V2, pin `v6.4.1` or later; `v6.3.0` and earlier releases load only on V1.
+Use a commit from this fork when pinning; tags on the original upstream repository are not guaranteed to exist here.
 
 ## Troubleshooting
 
@@ -105,7 +105,7 @@ the plugin, try installing with system npm and pointing OpenCode at the local
 package:
 
 ```powershell
-npm install superpowers@git+https://github.com/obra/superpowers.git --prefix "$HOME\.config\opencode"
+npm install superpowers@git+https://github.com/Areo-RGB/superpowers.git --prefix "$HOME\.config\opencode"
 ```
 
 Then use the absolute path of the installed package in `opencode.json` for your
@@ -162,5 +162,5 @@ Skills speak in actions ("create a todo", "dispatch a subagent", "read a file").
 
 ## Getting Help
 
-- Report issues: https://github.com/obra/superpowers/issues
-- Full documentation: https://github.com/obra/superpowers/blob/main/docs/README.opencode.md
+- Report issues: https://github.com/Areo-RGB/superpowers/issues
+- Full documentation: https://github.com/Areo-RGB/superpowers/blob/main/docs/README.opencode.md
